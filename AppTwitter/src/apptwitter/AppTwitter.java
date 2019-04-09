@@ -20,7 +20,6 @@ public class AppTwitter {
      * @throws twitter4j.TwitterException
      */
     public static void main(String[] args) throws TwitterException {
-        // TODO code application logic here
         int opcion;
         Twitter twitter = TwitterFactory.getSingleton();
         do{
