@@ -22,7 +22,7 @@ public class CB {
             .setOAuthAccessToken("1663520359-SsYceowur6Z6e7plVunxGBtiLeRPWtAqj3rRtEk")
             .setOAuthAccessTokenSecret("ZJGNCvOwBtIQROKuEN287qpmuq8Qrtv3yqJIVhsNakbrV");
         TwitterFactory tf = new TwitterFactory(cb.build());
-        Twitter twitter = tf.getSingleton();
+        Twitter twitter = tf.getInstance();
         return twitter;
     }
 }

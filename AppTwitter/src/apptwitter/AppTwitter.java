@@ -42,7 +42,8 @@ public class AppTwitter {
                 }
                 break;
                 //Filtrado
-                case 3: Query query = new Query("source:twitter4j yusukey");
+                case 3: String busqueda = JOptionPane.showInputDialog("Introduzca palabra de búsqueda:");
+                Query query = new Query(busqueda);
                 QueryResult result = twitter.search(query);
                 for (Status status : result.getTweets()) {
                     System.out.println("@" + status.getUser().getScreenName() + ":" + status.getText());
