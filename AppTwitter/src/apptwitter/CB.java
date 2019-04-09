@@ -14,6 +14,11 @@ import twitter4j.conf.ConfigurationBuilder;
  * @author aparcerozas
  */
 public class CB {
+
+    /**
+     *
+     * @return
+     */
     public Twitter instanciarCB(){
         ConfigurationBuilder cb = new ConfigurationBuilder();
         cb.setDebugEnabled(true)
