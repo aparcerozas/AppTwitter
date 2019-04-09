@@ -22,7 +22,8 @@ public class AppTwitter {
     public static void main(String[] args) throws TwitterException {
         // TODO code application logic here
         int opcion;
-        Twitter twitter = TwitterFactory.getSingleton();
+        CB obx = new CB();
+        Twitter twitter = obx.instanciarCB();
         do{
             opcion = Integer.parseInt(JOptionPane.showInputDialog("App Twitter"
                     + "\n1. Realizar un tuit\n2. Mostrar la línea del tiempo"
