@@ -22,10 +22,10 @@ public class CB {
     public Twitter instanciarCB(){
         ConfigurationBuilder cb = new ConfigurationBuilder();
         cb.setDebugEnabled(true)
-            .setOAuthConsumerKey("m4fc10McSLVNE4iPlEewWLhPK")
-            .setOAuthConsumerSecret("B6uxoTQ3SZIcMdktj1yrD95ioepbLCU4sw2jPKKWtCxusEBVDC")
-            .setOAuthAccessToken("1663520359-SsYceowur6Z6e7plVunxGBtiLeRPWtAqj3rRtEk")
-            .setOAuthAccessTokenSecret("ZJGNCvOwBtIQROKuEN287qpmuq8Qrtv3yqJIVhsNakbrV");
+            .setOAuthConsumerKey("*********************")
+            .setOAuthConsumerSecret("******************************************")
+            .setOAuthAccessToken("**************************************************")
+            .setOAuthAccessTokenSecret("******************************************");
         TwitterFactory tf = new TwitterFactory(cb.build());
         Twitter twitter = tf.getInstance();
         return twitter;
